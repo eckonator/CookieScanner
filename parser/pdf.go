@@ -54,18 +54,18 @@ func init() {
 <body>
 <div class="container mt-5">
     <section>
-        <a class="text-right d-block mb-3" href="https://gdprexpert.io">
-            <img class="image w-25" src="https://cdn.jsdelivr.net/gh/CovenantLabs/assets/gdprexpert/logo_io.png"/>
+        <a class="text-right d-block mb-3" href="https://www.tandem-kommunikation.de">
+            <img class="image w-25" src="https://www.tandem-kommunikation.de/typo3conf/ext/tancore/Resources/Public/tandem-kommunikation.de/Images/Frontend/logo.png"/>
         </a>
     </section>
     <section class="mb-5">
-        <h2 class="mb-3">Cookie scan report</h2>
+        <h2 class="mb-3">Ihr Cookie-Scan Report</h2>
         <div class="row">
             <div class="col-6">
                 <ul class="list-unstyled">
-                    <li><span class="mr-1">Scan date:</span>{{.ScanTime}}</li>
+                    <li><span class="mr-1">Scan Datum:</span>{{.ScanTime}}</li>
                     <li><span class="mr-1">Scan URL:</span>{{.ScanURL}}</li>
-                    <li><span class="mr-1">Cookies (in total):</span>{{.CookieCount}}</li>
+                    <li><span class="mr-1">Cookies (gesamt):</span>{{.CookieCount}}</li>
                 </ul>
             </div>
             <div class="col-6">
@@ -84,16 +84,16 @@ func init() {
                 {{if ne $record.Description ""}}
                     {{$record.Description}}
                 {{else}}
-                    We don’t have enough information about this cookie or the website hosting it to be able to assign it to a category at this time.
+                    Wir haben nicht genügend Informationen über dieses Cookie oder die Website, auf der es gehostet wird, um es zum jetzigen Zeitpunkt einer Kategorie zuordnen zu können.
                 {{end}}
                 -->
             </p>
             <table class="table border-top-0">
                 <thead>
                 <tr class="text-uppercase">
-                    <th scope="col" class="border-top-0">cookie name</th>
-                    <th scope="col" class="border-top-0">provider</th>
-                    <th scope="col" class="border-top-0">expiry</th>
+                    <th scope="col" class="border-top-0">Cookie Name</th>
+                    <th scope="col" class="border-top-0">Dienstleister</th>
+                    <th scope="col" class="border-top-0">Gültigkeit</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -107,13 +107,13 @@ func init() {
                         <td colspan="3" class="border-top-0 pt-0">
                             <ul class="list-unstyled">
                                 <li>
-                                    <small><strong class="mr-1">First found:</strong>{{$cookie.URL}}</small>
+                                    <small><strong class="mr-1">Erstmals gefunden:</strong>{{$cookie.URL}}</small>
                                 </li>
                                 <li>
                                     <small><strong class="mr-1">Initiator:</strong>{{$cookie.Initiator}}</small>
                                 </li>
                                 <li>
-                                    <small><strong class="mr-1">Source:</strong>
+                                    <small><strong class="mr-1">Quelle:</strong>
                                         {{if ne $cookie.Source "" }}{{$cookie.Source}}{{if gt $cookie.LineNo 0}}: {{$cookie.LineNo}}{{end}}{{else}}-{{end}}
                                     </small>
                                 </li>
@@ -128,7 +128,7 @@ func init() {
                                 </li>
                                 <li>
                                     <small>
-                                        <strong class="mr-1">Used&nbsp;Requests:</strong>{{$cookie.UsedRequests}}
+                                        <strong class="mr-1">Verwendete&nbsp;Anfragen:</strong>{{$cookie.UsedRequests}}
                                     </small>
                                 </li>
                                 <li>
@@ -137,7 +137,7 @@ func init() {
                                     </small>
                                 </li>
                                 <li>
-                                    <small><strong class="mr-1">Description:</strong>{{$cookie.Description}}</small>
+                                    <small><strong class="mr-1">Beschreibung:</strong>{{$cookie.Description}}</small>
                                 </li>
                             </ul>
                         </td>

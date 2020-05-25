@@ -20,11 +20,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/CovenantSQL/CookieScanner/cmd"
-	"github.com/CovenantSQL/CookieScanner/cmd/cli"
-	"github.com/CovenantSQL/CookieScanner/cmd/server"
-	"github.com/CovenantSQL/CookieScanner/cmd/version"
-	"github.com/CovenantSQL/CookieScanner/parser"
+	"github.com/eckonator/CookieScanner/cmd"
+	"github.com/eckonator/CookieScanner/cmd/cli"
+	"github.com/eckonator/CookieScanner/cmd/server"
+	"github.com/eckonator/CookieScanner/cmd/version"
+	"github.com/eckonator/CookieScanner/parser"
 	"github.com/sirupsen/logrus"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 )

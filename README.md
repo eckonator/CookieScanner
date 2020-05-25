@@ -56,7 +56,7 @@ $ docker container run -d -p 9222:9222 zenika/alpine-chrome --no-sandbox \
 Then, install the `CookieScanner` using `go get`.
 
 ```shell
-$ go get github.com/CovenantSQL/CookieScanner
+$ go get github.com/eckonator/CookieScanner
 ```
 
 ### Usage

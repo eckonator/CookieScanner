@@ -19,7 +19,7 @@ package cmd
 import (
 	"time"
 
-	"github.com/CovenantSQL/CookieScanner/parser"
+	"github.com/eckonator/CookieScanner/parser"
 )
 
 type CommonOptions struct {

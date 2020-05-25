@@ -1,6 +1,6 @@
 # build stage
 FROM golang:stretch AS builder
-WORKDIR /go/src/github.com/CovenantSQL/CookieScanner
+WORKDIR /go/src/github.com/eckonator/CookieScanner
 COPY . .
 RUN CGO_ENABLED=1 GOOS=linux go install -ldflags '-linkmode external -extldflags -static'
 
